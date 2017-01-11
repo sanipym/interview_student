@@ -1,0 +1,7 @@
+<h1>Mark list form </h1>
+  <%= form_for @mark_list,:url => "/marklist", :method => :post do | f |%>
+    <%= f.label :subject_name%>
+    <%= f.select :subject_name, [["subject1","subject1"],["subject2","subject2"],["subject3","subject3"]] %>
+    <%= f.file_field :file%>
+    <%= f.submit "create"%>
+  <% end %>

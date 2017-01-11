@@ -1,0 +1,7 @@
+<h1>Mark_list</h1>
+  <h2> mark </h2>
+  <% @mark_list.each do | mark | %>
+    <%= "  #{mark.student_name} : "%>
+    <%= mark.mark%>
+    <br>
+  <% end %>

@@ -1,0 +1,2 @@
+class Markliste < ApplicationRecord
+end

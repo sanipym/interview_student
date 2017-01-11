@@ -1,0 +1,13 @@
+<h1>Verification of <%= @teacher.subject_name%></h1>
+<h2> mark </h2>
+<% @mark_list.each do | mark | %>
+  <%= "  #{mark.student_name} : "%>
+  <%= mark.mark%>
+  <% if mark.verify.present?%>
+    verify
+  <% else %>
+    not verify
+    <%=link_to "update", verify_path(mark) %>
+  <% end %>
+  <br>
+<% end %>
